@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DADS Info Radiator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📊 DADS Information Radiator</h1>
+
+  <section id="issues">
+    <h2>GitHub Issues</h2>
+    <p>Loading...</p>
+  </section>
+
+  <section id="burndown">
+    <h2>Sprint Burndown</h2>
+    <canvas id="burndownChart" width="600" height="300"></canvas>
+  </section>
+
+  <section id="mood">
+    <h2>Team Mood</h2>
+    <button onclick="setMood('😊')">😊</button>
+    <button onclick="setMood('😐')">😐</button>
+    <button onclick="setMood('😔')">😔</button>
+    <p id="currentMood">No mood selected</p>
+  </section>
+
+  <section id="ideas">
+    <h2>Ideas for Improvement</h2>
+    <textarea id="ideasBox" placeholder="Type your ideas here..."></textarea>
+    <button onclick="saveIdeas()">Save Ideas</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
